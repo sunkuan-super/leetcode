@@ -30,7 +30,24 @@ public class IntegerInversion {
         }
     }
 
+    public static int reverse2(int x) {
+        String xString = Integer.toString(x);
+        int flag = 1;
+        if (x < 0) {
+            flag = -1;
+            xString = xString.substring(1);
+        }
+
+        try {
+            return Integer.parseInt(new StringBuilder(xString).reverse().toString()) * flag;
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
+
     public static void main(String[] args) {
-        System.out.println(-10/20);
+        String string = Integer.toString(-9877);
+        System.out.println(string);
     }
 }

@@ -16,6 +16,13 @@ public class MaxSubArraySum_53 {
     /**
      * 贪心算法
      *
+     *          -2    1          -3      4            -1     2    1    -5    4
+     *  当前值： -2    1          -3      4            -1     2    1    -5    4
+     *  之前和：null  -2（负，舍）   1     -2（负，舍）    4     3    5     6    1
+     *  当前和： -2    1          -2      4             3     5    6     1    5
+     *  最大和： -2    1           1      4             4     5    6     6    6
+     *
+     *
      * @param nums 数组
      * @return 最大子数组之和
      */
@@ -78,7 +85,8 @@ public class MaxSubArraySum_53 {
             count = 0;
             for (int j = i; j < nums.length; j++) {
                 count += nums[j];
-                result = count > result ? count: result;
+                result = count > result ? count : result;
+                // result = Math.max(result, count);
             }
         }
 
