@@ -7,7 +7,7 @@ package com.sk.demo.leetcode.simple;
  * @Author: sk
  * @Date: 2022/3/4 - 17:37
  */
-public class LengthOfLastWord_58 {
+public class Code58_LengthOfLastWord {
 
 
     /**

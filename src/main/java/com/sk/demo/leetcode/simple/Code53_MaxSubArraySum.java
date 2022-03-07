@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @Author: sk
  * @Date: 2022/3/2 - 16:05
  */
-public class MaxSubArraySum_53 {
+public class Code53_MaxSubArraySum {
 
     /**
      * 贪心算法

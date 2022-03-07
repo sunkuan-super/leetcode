@@ -7,7 +7,7 @@ package com.sk.demo.leetcode.simple;
  * @Author: sk
  * @Date: 2022/3/2 - 11:15
  */
-public class SearchInsert_35 {
+public class Code35_SearchInsert {
 
     /**
      * 暴力破解法

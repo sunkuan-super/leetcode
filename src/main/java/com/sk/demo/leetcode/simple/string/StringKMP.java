@@ -5,10 +5,17 @@ public class StringKMP {
 
     public int getIndexOf(String str, String subStr) {
         // 不合法的情况
-        if (str == null || subStr == null || str.length() < 1 || subStr.length() > str.length()) {
+        if (str == null || subStr == null || subStr.length() > str.length()) {
             return -1;
         }
 
+        if (str.length() < 1) {
+            return 0;
+        }
+
+        if (subStr.length() < 1) {
+            return 0;
+        }
 
         char[] strCharArray = str.toCharArray();
         char[] subCharArray = subStr.toCharArray();
@@ -65,5 +72,10 @@ public class StringKMP {
 
 
         return new int[]{1};
+    }
+
+    public static void main(String[] args) {
+        int a = new StringKMP().getIndexOf("a", "");
+        System.out.println(a);
     }
 }

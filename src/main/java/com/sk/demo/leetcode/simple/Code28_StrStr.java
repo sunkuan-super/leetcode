@@ -1,6 +1,6 @@
 package com.sk.demo.leetcode.simple;
 
-public class StrStr_28 {
+public class Code28_StrStr {
     public static int strStr(String haystack, String needle) {
 
         int i = 0;

@@ -7,7 +7,7 @@ package com.sk.demo.leetcode.simple;
  * @Author: sk
  * @Date: 2022/3/1 - 17:20
  */
-public class RemoveElement_27 {
+public class Code27_RemoveElement {
     public int removeElement(int[] nums, int val) {
         if(nums == null || nums.length == 0){
             return 0;
@@ -26,7 +26,7 @@ public class RemoveElement_27 {
 
 
     public static void main(String[] args) {
-        RemoveElement_27 r = new RemoveElement_27();
+        Code27_RemoveElement r = new Code27_RemoveElement();
 
 
         int[] ints1 = {0,1,2,2,3,0,4,2};
